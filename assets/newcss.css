@@ -157,6 +157,25 @@ img {
   margin-right: var(--mb-1-5);
 }
 
+.home__img {
+  background-color: rgb(27, 27, 63);
+  display: flex; /* Ensures centering works if needed */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  padding: 20px; /* Adjust padding to ensure proper spacing */
+  border-radius: 50%; /* Ensures the div is rounded */
+  width: 300px; /* Set a fixed width for the div */
+  height: 300px; /* Set a fixed height for the div */
+  overflow: hidden; /* Ensures the image stays within the rounded div */
+}
+
+.home__img img {
+  width: 150%; /* Ensures the image scales within the div */
+  height: 120%; /* Ensures the image scales within the div */
+  /* Makes the image itself rounded */
+  object-fit: cover; /* Ensures the image fits nicely inside the div */
+}
+
 .grid {
   display: grid;
   gap: 1.5rem;
